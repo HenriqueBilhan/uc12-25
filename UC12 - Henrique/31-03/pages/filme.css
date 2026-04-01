@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: brown;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+img {
+    width: 500px;
+}
+
+button {
+    background-color: rgb(214, 55, 55);
+    border: none;
+    border-radius: 8px;
+}

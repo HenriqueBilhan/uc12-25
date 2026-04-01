@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <!-- tag para formulários -->
+     <h2>Formulário de cadastro</h2>
+  <label for="nome">Nome:</label><br>
+  <input type="text" id="nome" name="nome" required><br><br>
+
+  <label for="email">E-mail:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <label for="senha">Senha:</label><br>
+  <input type="password" id="senha" name="senha" required><br><br>
+
+  <label for="escolhas">O que você sabe?</label>
+  <input type="checkbox" name="escolhas" value="js" id="">JS
+  <input type="checkbox" name="escolhas" value="html" id="">HTML
+  <input type="checkbox" name="escolhas" value="css" id="">CSS
+
+  <label for="sexo">Gênero</label>
+  <input type="radio" name="sexo" value="masculino" id="">Masculino
+  <input type="radio" name="sexo" value="feminino" id="">Feminino
+  <input type="radio" name="sexo" value="indefinido" id="">Indefinido
+  <input type="radio" name="sexo" value="nao-informado" id="">Prefiro não informar'
+
+  <label for="curso">Curso desejado</label><br>
+  <select name="curso" id="">
+    <option value="html">HTML</option>
+    <option value="js">JS</option>
+    <option value="css">CSS</option>
+  </select>
+
+  <label for="nascimento">Data de nascimento</label>
+  <input type="date" name="nascimento" id="">
+</body>
+</html>
