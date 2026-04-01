@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: white;
+    padding: 10px 80px 10px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    width: 10%;
+}
+
+header a {
+    color: blue;
+    margin: 10px;
+}
+
+header i {
+    margin: 15px;
+}
+
+a {
+    text-decoration: none;
+    font-size: large;
+}
+
+.banner{
+    background-image: url(https://api.senacrs.com.br/bff/site-senac/v1/file/c9eccbd05b675439c61d734fa693e64ba46a6f.png);
+    height: 400px;
+}
+
+.cursos {
+    height: 30vh;
+    background-color: aquamarine;
+    display:flex;
+    justify-content:center;
+}
+.cursos.imagem{
+    width: 150px;
+    height: 150px;
+    border: radius 50%;
+    background-color: blue;
+    overflow: hidden;
+    object-fit: cover;
+}
+.cursos-imagem img {
+    width: 100%;
+
+}
+
