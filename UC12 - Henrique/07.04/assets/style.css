@@ -1,0 +1,134 @@
+/* =========================
+   GERAL
+========================= 
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+}
+
+h2 {
+  margin-top: 40px;
+}
+
+/* =========================
+   EX 1
+========================= 
+.ex1 {
+  width: 200px;
+  background: gray;
+  padding: 20px;
+  border: 2px solid black;
+  color: white;
+}
+
+/* =========================
+   EX 2
+========================= 
+.ex2 {
+  width: 200px;
+  background: gray;
+  padding: 20px;
+  border: 2px solid black;
+  box-sizing: border-box;
+  color: white;
+}
+
+/* =========================
+   EX 3
+========================= 
+.ex3-box {
+  width: 150px;
+  height: 100px;
+  display: inline-block;
+  margin: 20px; /* teste trocar por padding 
+}
+
+.red {
+  background: red;
+}
+
+.blue {
+  background: blue;
+}
+
+/* =========================
+   EX 4
+========================= 
+.ex4 {
+  width: 200px;
+  padding: 20px;
+  border: 5px solid black;
+  background: lightgray;
+}
+
+/* =========================
+   EX 5
+========================= 
+.ex5 {
+  width: 200px;
+  padding: 20px;
+  border: 5px solid black;
+  box-sizing: border-box;
+  background: lightgray;
+}
+
+/* =========================
+   EX6
+========================= 
+.ex6 {
+  width: 200px;
+  background: gray;
+  margin: 0 auto;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+/* =========================
+   EX 7
+========================= 
+.ex7-box {
+  height: 100px;
+  margin: 20px;
+}
+
+/* =========================
+   EX 8 (CARD)
+========================= 
+.card {
+  width: 250px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin: 20px;
+  background: white;
+  box-sizing: border-box;
+}
+
+/* =========================
+   EX9 (DEBUG)
+========================= 
+.ex9 {
+  width: 200px;
+  padding: 30px;
+  border: 10px solid black;
+  box-sizing: border-box;
+  background: lightgray;
+}
+
+/* =========================
+   EX 10
+========================= 
+.container {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card-flex {
+  width: 30%;
+  padding: 20px;
+  background: lightgray;
+  box-sizing: border-box;
+  text-align: center;
+}
+*/

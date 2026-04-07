@@ -44,17 +44,27 @@ a {
     background-color: aquamarine;
     display:flex;
     justify-content:center;
+    gap:30px;
 }
-.cursos.imagem{
-    width: 150px;
-    height: 150px;
-    border: radius 50%;
+.curso-imagem {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
     background-color: blue;
     overflow: hidden;
-    object-fit: cover;
+   border: 5px solid orange;
 }
-.cursos-imagem img {
-    width: 100%;
+.curso-imagem img {
+    height: 100%;
 
 }
+.borda-azul{
+    border: 5px solid rgb(48, 48, 136);
+}
 
+.curso h3{
+    font-size: small;
+    font-weight: normal;
+    color: black;
+    
+}
