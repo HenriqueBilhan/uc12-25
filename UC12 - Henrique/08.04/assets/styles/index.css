@@ -1,0 +1,110 @@
+/*
+ex1
+div{
+    background-color: rebeccapurple;
+}
+span{
+   background-color: blue; 
+}
+*/
+/*
+ex2
+.ex2{
+    width: 200px;
+    background-color: blue;
+
+}
+    */
+    /*
+    ex3
+    span{
+        width: 200px;
+        background-color: blue;
+    }
+        */
+        /*
+        ex4
+        span{
+            display: inline-block;
+        width: 200px;
+        background-color: blue;
+        }
+        */
+        /*
+        ex5
+        .caixa{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+            */
+           /*
+           ex6 
+            .box1{
+                width: 100px;
+                height: 80px;
+                background-color: gray;
+                display: block;
+            }
+            .box2{
+                width: 100px;
+                height: 80px;
+                background-color: gray;
+                display: inline;
+            }
+            .box3{
+                width: 100px;
+                height: 80px;
+                background-color: gray;
+                display: inline-block;
+            }
+            
+               */
+               /*
+               .box1{
+                /*display: none;*/
+              /*  visibility: hidden;
+               } 
+               /*
+               
+               ex8
+               a{
+width: 200px;
+display: inline-block;
+background-color: blue;
+               }
+*/
+/*
+ex9
+a{
+    display: inline-block;
+    width: 200px;
+    background-color: gray;
+}
+    */
+/*
+   .card {
+    width: 300px;         
+    padding: 20px;         
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+
+    display: flex;        
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card h2 {
+    margin: 0;
+}
+
+.card button {
+    width: 120px;          
+    padding: 10px;
+    background-color: purple;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+    */
