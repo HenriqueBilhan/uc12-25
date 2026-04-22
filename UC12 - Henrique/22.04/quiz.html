@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz do Espaço</title>
+  <link rel="stylesheet" href="assets/styles/style.css" />
+</head>
+<body>
+
+  <div id="quiz-wrap">
+    <div id="bg-img"></div>
+    <div id="error-overlay"></div>
+
+    <div id="quiz-content">
+
+      <div id="quiz-screen">
+        <div id="top-bar">
+          <span id="quiz-title">Quiz do Espaço</span>
+          <div id="progress-wrap"></div>
+        </div>
+        <div id="question-num"></div>
+        <div id="question-text"></div>
+        <div id="options-grid"></div>
+        <div id="feedback"></div>
+        <button id="next-btn" onclick="nextQuestion()">Próxima →</button>
+      </div>
+
+      <div id="result-screen">
+        <div id="result-emoji"></div>
+        <div id="result-title"></div>
+        <div id="result-score"></div>
+        <button id="restart-btn" onclick="startQuiz()">Jogar novamente</button>
+      </div>
+
+    </div>
+     <script src="index.js"></script>
+  </div>
+
+
+</body>
+</html>
