@@ -1,42 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quiz do Espaço</title>
-  <link rel="stylesheet" href="assets/styles/style.css" />
+  <meta charset="UTF-8">
+  <title>Quiz Assustador</title>
+  <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
 
-  <div id="quiz-wrap">
-    <div id="bg-img"></div>
-    <div id="error-overlay"></div>
+  <div class="container">
+    <h1>Quiz Sombrio</h1>
 
-    <div id="quiz-content">
+    <div id="question">Pergunta aqui</div>
 
-      <div id="quiz-screen">
-        <div id="top-bar">
-          <span id="quiz-title">Quiz do Espaço</span>
-          <div id="progress-wrap"></div>
-        </div>
-        <div id="question-num"></div>
-        <div id="question-text"></div>
-        <div id="options-grid"></div>
-        <div id="feedback"></div>
-        <button id="next-btn" onclick="nextQuestion()">Próxima →</button>
-      </div>
-
-      <div id="result-screen">
-        <div id="result-emoji"></div>
-        <div id="result-title"></div>
-        <div id="result-score"></div>
-        <button id="restart-btn" onclick="startQuiz()">Jogar novamente</button>
-      </div>
-
+    <div class="options">
+      <button class="btn" onclick="checkAnswer(0)"></button>
+      <button class="btn" onclick="checkAnswer(1)"></button>
+      <button class="btn" onclick="checkAnswer(2)"></button>
+      <button class="btn" onclick="checkAnswer(3)"></button>
+      <button class="btn" onclick="checkAnswer(4)"></button>
     </div>
-     <script src="index.js"></script>
   </div>
 
+  
+  <div id="jumpscare">
+    <img id="scare-img" src="https://i.pinimg.com/originals/e9/16/51/e916510b57ae19a562796984e7f10e0f.gif">
+  </div>
 
+  
+  <audio id="scare-sound" src="https://www.myinstants.com/media/sounds/scream.mp3"></audio>
+
+  <script src="index.js"></script>
 </body>
 </html>

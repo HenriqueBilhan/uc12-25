@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz do Terror</title>
+    <link rel="stylesheet" href="assets/styles/index.css">
+</head>
+<body>
+    <div class="container">
+        <div id="quiz-container" class="quiz-container">
+            <h1 class="title">🩸 QUIZ DO TERROR 🩸</h1>
+            <div id="question-container" class="question-container">
+                <h2 id="question"></h2>
+                <div id="options"></div>
+            </div>
+            <div id="progress" class="progress">Pontuação: <span id="score">0</span>/10</div>
+            <div id="timer" class="timer">Tempo: <span id="time-left">30</span>s</div>
+        </div>
+
+        <!-- Jumpscare -->
+        <div id="jumpscare" class="jumpscare">
+            <img id="jumpscare-img" src="https://i.pinimg.com/originals/e9/16/51/e916510b57ae19a562796984e7f10e0f.gif" alt="Jumpscare">
+            <audio id="scream" preload="auto">
+                <source src="https://www.101soundboards.com/sounds/11624-foxybro-jump-scare" type="audio/wav">
+            </audio>
+        </div>
+
+        <!-- Tela final -->
+        <div id="game-over" class="game-over hidden">
+            <h1 id="final-score"></h1>
+            <button onclick="location.reload()">Jogar Novamente</button>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

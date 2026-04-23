@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Creepster', cursive;
+    background: linear-gradient(45deg, #000, #330000, #000);
+    background-size: 400% 400%;
+    animation: pulse 2s ease-in-out infinite alternate;
+    color: #ff0000;
+    overflow: hidden;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><circle cx="16" cy="16" r="4" fill="red"/></svg>'), auto;
+}
+
+@keyframes pulse {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    75% { transform: translateX(10px); }
+}
+
+@keyframes flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 0 0 20px #ff0000, 0 0 40px #ff0000;
+    animation: flicker 0.1s infinite;
+    margin-bottom: 2rem;
+    letter-spacing: 5px;
+}
+
+.quiz-container {
+    background: rgba(0,0,0,0.9);
+    padding: 3rem;
+    border: 3px solid #ff0000;
+    border-radius: 20px;
+    box-shadow: 0 0 50px #ff0000;
+    max-width: 600px;
+    text-align: center;
+    animation: shake 0.5s infinite;
+}
+
+.question-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    text-shadow: 0 0 10px #ff0000;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.option {
+    background: linear-gradient(45deg, #330000, #660000);
+    border: 2px solid #ff0000;
+    color: #fff;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-shadow: 0 0 5px #ff0000;
+    box-shadow: 0 0 15px rgba(255,0,0,0.3);
+}
+
+.option:hover {
+    background: linear-gradient(45deg, #660000, #990000);
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #ff0000;
+}
+
+.option.correct {
+    background: #00ff00 !important;
+    animation: flicker 0.2s infinite;
+}
+
+.option.wrong {
+    background: #ff0000 !important;
+    animation: shake 0.5s;
+}
+
+.progress, .timer {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    text-shadow: 0 0 10px #ff0000;
+}
+
+.timer {
+    color: #ffff00;
+    animation: flicker 0.5s infinite;
+}
+
+/* Jumpscare */
+.jumpscare {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.jumpscare.active {
+    display: flex !important;
+    animation: jumpscareShake 0.1s infinite;
+}
+
+#jumpscare-img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+
+@keyframes jumpscareShake {
+    0%, 100% { transform: translateX(0) scale(1); }
+    25% { transform: translateX(-20px) scale(1.1); }
+    75% { transform: translateX(20px) scale(1.1); }
+}
+
+/* Game Over */
+.game-over {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.95);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.game-over h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    animation: flicker 0.2s infinite;
+}
+
+.game-over button {
+    padding: 1.5rem 3rem;
+    font-size: 1.5rem;
+    background: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 0 20px #ff0000;
+}
+
+.hidden {
+    display: none !important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
