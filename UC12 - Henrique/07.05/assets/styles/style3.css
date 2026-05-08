@@ -1,0 +1,42 @@
+/*
+div{
+    position: relative;
+    top: 50px;
+    left: 50px;
+    background-color: lightblue;
+    width: 400px;
+    height: 400px;
+}
+    */
+    body {
+        padding: 100px;
+    }
+    div {
+        position: relative;
+        width: 40px;
+
+    }
+    img {
+        width: 40px;
+    }
+    span {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        background:brown;
+        border-radius: 50%;
+        font-size: 12%;
+        padding: 2px 5px;
+    }
+
+    .whats {
+        width: 40px;
+        position: fixed;
+        right: 50px;
+        bottom: 50px;
+    }
+    .whats:hover{
+        transform: scale(1.1);
+        transition: 1ll 0.3s ease;
+        cursor: pointer;
+    }
