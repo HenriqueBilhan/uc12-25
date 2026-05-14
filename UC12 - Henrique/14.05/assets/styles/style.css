@@ -1,0 +1,109 @@
+/*button {
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;  
+}
+button:hover{
+    background-color: #cc5200;
+    border-radius: 5px;
+    /*transform: scale(1.1); amplia */
+    /*transform: rotate(0.2deg); gira*/
+  
+  /*  transform: translatex(10px);
+  
+}
+*/
+/*criando a animação com @keyframes 
+@keyframes fadeIn{
+from {opacity: 0;}
+to { opacity: 1;}
+}
+.fade-in {
+animation: fadeIn 2s ease ;
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.fade-out {
+  animation: fadeOut 1s ease forwards;
+}
+
+@keyframes slideIn {
+    from {transform: translatex(-100%);}
+    to {transform: translatex(0); opacity: 1;}
+}
+.slide-in {
+    animation: slideIn 1s ease-out;
+}
+
+
+@keyframes zoomOut {
+  from { transform: scale(1); opacity: 1; }
+  to { transform: scale(0.5); opacity: 0; }
+}
+
+.zoom-out {
+  animation: zoomOut 0.6s ease;
+}
+
+@keyframes pulse {
+    0%{transform: scale(1);}
+    50%{transform: scale(1.1);}
+    100%{transform:scale(1);}
+}
+.pulse {
+    background-color: red;
+    width: 50px;
+    animation: pulse 1s infinite;
+}
+
+@keyframes girar {
+    from { transform:rotate(0deg);}
+    to { transform: rotate(360deg);}
+}
+
+.loader {
+  border: 6px solid #eee;
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 30px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.box{
+    opacity: 0;
+}
+box.visible{
+    animation: slideIn 1s ease;
+}
+*/
+@keyframes slide-In {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.box {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+.box.visible {
+    animation: slide-In 2s ease forwards;
+}
