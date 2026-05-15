@@ -1,0 +1,130 @@
+/*
+===================================================
+                CSS NORMAL
+===================================================
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container-pai{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: crimson;
+    height: 30vh;
+}
+
+.container-filho{
+    background-color: palevioletred;
+    padding: 50px;
+}
+
+header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    color: white;
+    position: relative;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin: 0px 10px;
+}
+
+nav{
+    display: flex;
+    gap: 10px;
+}
+
+.menu-mobile{
+    display: none;
+    font-size: 2rem;
+}
+
+/*
+===================================================
+                TELAS MOBILE
+===================================================
+*/
+
+@media (max-width: 800px){
+
+    .menu-mobile{
+        display: block;
+    }
+
+    nav{
+        position: absolute;
+        top: 55px;
+        right: 36px;
+        background-color: #111;
+        border-radius: 10px;
+        padding: 15px;
+        flex-direction: column;
+        gap: 10px;
+        display: none;
+    }
+
+    nav.clica{
+        display: flex;
+    }
+
+    .container-pai{
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .container-filho{
+        width: 80vw;
+        height: 80vw;
+    }
+
+    header nav{
+        position: absolute;
+
+        top: 100%;
+        right: 20px;
+
+        background-color: black;
+
+        display: flex;
+        flex-direction: column;
+
+        width: 220px;
+
+        border-radius: 10px;
+        overflow: hidden;
+
+        /*Animação*/
+        max-height: 0;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: max-heigth 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+    }
+    /*Link*/
+    header nav a{
+        padding: 20px;
+        border-radius: 1px solid black;
+        margin: 0;
+    }
+
+    header nav a:hover{
+        background-color: rgb(175, 34, 140);
+    }
+
+    header nav.active{
+        max-height: 500px;
+        opacity: 1;
+        transform: translateY();
+    }
+}

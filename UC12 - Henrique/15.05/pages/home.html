@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="..//assets/styles/home.css">
+</head>
+<body>
+
+  <header>
+    <div>
+      <h1>MEU LOGO</h1>
+    </div>
+    <nav id="nav-menu">
+
+    
+      <div class="nav-item">
+        <a href="#">Sobre <span class="seta">▼</span></a>
+        <div class="dropdown">
+          <a href="#"><i class="fa-solid fa-building"></i> A Empresa</a>
+          <a href="#"><i class="fa-solid fa-users"></i> Nossa Equipe</a>
+          <a href="#"><i class="fa-solid fa-newspaper"></i> Blog</a>
+        </div>
+      </div>
+
+      
+      <div class="nav-item">
+        <a href="#">Compras <span class="seta">▼</span></a>
+        <div class="dropdown">
+          <a href="#"><i class="fa-solid fa-laptop"></i> Eletrônicos</a>
+          <a href="#"><i class="fa-solid fa-shirt"></i> Roupas</a>
+          <a href="#"><i class="fa-solid fa-tag"></i> Promoções</a>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i> Meu Carrinho</a>
+        </div>
+      </div>
+
+      
+      <div class="nav-item">
+        <a href="#">Contato <span class="seta">▼</span></a>
+        <div class="dropdown">
+          <a href="#"><i class="fa-solid fa-envelope"></i> E-mail</a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+          <a href="#"><i class="fa-solid fa-headset"></i> Suporte</a>
+        </div>
+      </div>
+
+    </nav>
+    <div class="menu-mobile" id="btn-menu">
+      <i class="fa-solid fa-bars" style="color:white"></i>
+    </div>
+  </header>
+
+  <div class="container-pai">
+    <div class="container-filho">Filho 1</div>
+    <div class="container-filho">Filho 2</div>
+    <div class="container-filho">Filho 3</div>
+  </div>
+
+  <div class="extra">
+    <h2>Role a página ↑</h2>
+    <p>
+      Observe o header: ao rolar, o JavaScript detecta o scroll e adiciona
+      a classe <code>.scrolled</code>, mudando a cor via <strong>transition</strong>.
+      O header usa <strong>position: sticky</strong> para continuar visível.
+    </p>
+  </div>
+  <script src="../assets/js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+
+
+div{
+    background-color: brown;
+    height: 36vh;
+    font: 48px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width:600px) {
+    div {
+        background-color: chocolate;
+    }
+}
+
+@media (orientation: landscape) {
+    div {
+        background-color: cadetblue;
+    }
+}
+
+button{
+    background-color: brown;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: none;
+    border: none;
+}
+button > a {
+    color: white;
+    text-decoration: none;
+}
